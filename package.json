@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc; node built/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc && node built/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,11 @@
     "url": "https://github.com/ThomasEcalle/angular_week_first/issues"
   },
   "homepage": "https://github.com/ThomasEcalle/angular_week_first#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
     "typescript": "^3.3.4000"
   }
 }
